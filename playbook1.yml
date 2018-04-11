@@ -1,0 +1,26 @@
+
+
+---
+- name: Creating dir and files
+  hosts: all
+  tasks: 
+   - name: Creating dir
+     file:
+      name: newf1
+      state: directory
+      owner: root
+      group: Anu
+      mode: 765
+   - name: Creating files
+     file:
+      name: newf1/file1
+      state: touch
+      owner: vagrant
+      group: Anu
+      mode: 777
+
+
+
+
+
+...
