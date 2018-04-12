@@ -1,0 +1,14 @@
+---
+- name: User creation on a group of hosts
+  hosts: webserver
+  tasks:
+   - name: creating user accounts
+     user:
+      name: "{{a}}"
+      password: "{{b}}"
+      home: "{{c}}"
+      shell: "{{d}}"
+
+
+
+...

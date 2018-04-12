@@ -1,0 +1,15 @@
+---
+- name: Using host scope variables
+  hosts: 10.10.10.94
+  tasks:
+   - name: creating file
+     file:
+      name: "{{a}}"
+      state: "{{b}}"
+      owner: "{{c}}"
+      group: "{{d}}"
+      mode: "{{e}}"
+
+
+
+...

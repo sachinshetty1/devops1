@@ -1,0 +1,19 @@
+---
+- name: Installing uninstalling packages
+  hosts: 10.10.10.92
+  vars:
+   a: apache2
+   b: present
+   c: no
+  tasks:
+   - name: installing/uinstalling
+     apt:
+      name: "{{a}}"
+      state: "{{b}}"
+      update_cache: "{{c}}"
+
+
+
+
+
+...

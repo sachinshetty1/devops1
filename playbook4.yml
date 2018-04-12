@@ -1,0 +1,13 @@
+---
+- name: Install or uninstall packages
+  hosts: 10.10.10.92
+  tasks:
+   - name: Install/uinstall
+     apt:
+      name: "{{a}}"
+      state: "{{b}}"
+      update_cache: "{{c}}"
+
+
+
+...
